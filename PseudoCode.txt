@@ -1,0 +1,62 @@
+//import libraries
+
+//make a class for the board
+//define a 2D array of a set size for generating the pieces
+//define a 2D array of the same size as original array for keeping track of which positions are being deleted
+//define a 2d array of the same size as the original array for keeping track of which positions can be switched
+//define score goal as an integer
+
+//generate randomized integer values within the range of values of the pieces on a 2D array
+//assign integer values to each type of piece
+//need to figure out a way to randomize values in such a way that there are no initial matches to avoid first checking loop finding matches
+
+//make main method
+//try
+//loop1
+//while true (main repeating loop)
+
+//loop2
+//while true (checking for matches made without user input)
+//check columns for >= 3 pieces of the same type and keep coordinates in the deleting array if combination is found
+//check columns for >= 3 pieces of the same type and keep coordinates in the deleting array if combination is found
+//delete pieces and add score at each position set on the deleting array, set deleted position equivalents on original array to 0 to represent no piece there
+//for each column of original array
+//for as many 0's in the column
+//move pieces in column down by 1 space and generate a random integer value at the top of the column
+//if no pieces are matched
+//break first checking loop
+
+//loop3
+//while user can make moves or score is below threshhold (broken when no possible moves or score is reached)
+
+//check for possible moves
+
+//for each column 
+//check to see if there are >= 3 pieces of the same type in the same or adjacent columns and within 5 rows that can be moved horizontally or vertically to make at least a column of 3 pieces of the same type; if a possible move is found, user can make moves variable is set to true and coordinates of swapped piece coordinates are set to a value meaning that the pieces can be swapped
+
+//for each row
+//check to see if there are >= 3 pieces of the same type in the same or adjacent rows and within 5 columns that can be moved horizontally or vertically to make at least a row of 3 pieces of the same type; if a possible move is found, user can make moves variable is set to true
+
+//if user can make moves variable is false 
+//tell user game over and break out of loop1
+
+//loop3
+//while user can make moves (still inside loop1)
+//get user inputted move and get coordinates of calculated move locations
+
+//second checking loop
+//if coordinates of both pieces are swappable on the swapping array
+//check columns for >= 3 pieces of the same type and keep coordinates in the deleting array if combination is found
+//check columns for >= 3 pieces of the same type and keep coordinates in the deleting array if combination is found
+//else
+//tell user invalid move and ask for another move
+
+//delete pieces and add score at each position set on the deleting array, set deleted position equivalents on original array to 0 to represent no piece there
+//for each column of original array
+//for as many 0's in the column
+//move pieces in column down by 1 space and generate a random integer value at the top of the column
+//break out of making move loop
+
+//catch IOException e
+
+//should loop back to checking for matches made without user input
