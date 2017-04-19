@@ -28,15 +28,15 @@
 //if there's time, assign integer values that represent special pieces created by matching > 3 pieces of the same type in certain patterns
 //if there's time, make special interactions between special pieces or between normal and special pieces
 
+//end of checking matches without user input
+
+//for all positions on deleting array
 //delete pieces and add score at each position set on the deleting array, set deleted position equivalents on original array to 0 to represent no piece there
 //for each column of original array
 //for as many 0's in the column
 //move pieces in column down by 1 space and generate a random integer value at the top of the column
 //if no pieces are matched
 //break first checking loop
-
-//loop3
-//while user can make moves or score is below threshhold (broken when no possible moves or score is reached)
 
 //check for possible moves
 
@@ -47,10 +47,10 @@
 //check to see if there are >= 3 pieces of the same type in the same or adjacent rows and within 5 columns that can be moved horizontally or vertically to make at least a row of 3 pieces of the same type; if a possible move is found, user can make moves variable is set to true
 
 //if no possible moves (swappable array has all values saying can't swap and user can make moves is false)
-//tell user game over and quit
+//tell user game over and quit (break main loop)
 
-//loop4
-//while user can make moves (still inside loop1)
+//loop3
+//while user can make moves and score is below threshhold (broken when no possible moves or score is reached) (still inside main loop)
 //get user inputted move and get coordinates of calculated move locations
 
 //second checking loop
