@@ -8,6 +8,8 @@
 
 //generate randomized integer values within the range of values of the pieces on a 2D array
 //assign integer values to each type of piece
+//if there's time, assign integer values that represent special pieces created by matching > 3 pieces of the same type in certain patterns
+//if there's time, make special interactions between special pieces or between normal and special pieces
 //need to figure out a way to randomize values in such a way that there are no initial matches to avoid first checking loop finding matches
 
 //make main method
@@ -17,8 +19,15 @@
 
 //loop2
 //while true (checking for matches made without user input)
+
 //check columns for >= 3 pieces of the same type and keep coordinates in the deleting array if combination is found
+//if there's time, assign integer values that represent special pieces created by matching > 3 pieces of the same type in certain patterns
+//if there's time, make special interactions between special pieces or between normal and special pieces
+
 //check columns for >= 3 pieces of the same type and keep coordinates in the deleting array if combination is found
+//if there's time, assign integer values that represent special pieces created by matching > 3 pieces of the same type in certain patterns
+//if there's time, make special interactions between special pieces or between normal and special pieces
+
 //delete pieces and add score at each position set on the deleting array, set deleted position equivalents on original array to 0 to represent no piece there
 //for each column of original array
 //for as many 0's in the column
@@ -37,10 +46,10 @@
 //for each row
 //check to see if there are >= 3 pieces of the same type in the same or adjacent rows and within 5 columns that can be moved horizontally or vertically to make at least a row of 3 pieces of the same type; if a possible move is found, user can make moves variable is set to true
 
-//if user can make moves variable is false 
-//tell user game over and break out of loop1
+//if no possible moves (swappable array has all values saying can't swap and user can make moves is false)
+//tell user game over and quit
 
-//loop3
+//loop4
 //while user can make moves (still inside loop1)
 //get user inputted move and get coordinates of calculated move locations
 
@@ -49,14 +58,16 @@
 //check columns for >= 3 pieces of the same type and keep coordinates in the deleting array if combination is found
 //check columns for >= 3 pieces of the same type and keep coordinates in the deleting array if combination is found
 //else
-//tell user invalid move and ask for another move
+//tell user invalid move and ask for another move (continue)
 
 //delete pieces and add score at each position set on the deleting array, set deleted position equivalents on original array to 0 to represent no piece there
 //for each column of original array
 //for as many 0's in the column
 //move pieces in column down by 1 space and generate a random integer value at the top of the column
+//set user can make moves to false
 //break out of making move loop
 
-//catch IOException e
-
 //should loop back to checking for matches made without user input
+//if no matches are found in the matching without user input loop, should go to checking possible moves loop
+
+//catch IOException e
